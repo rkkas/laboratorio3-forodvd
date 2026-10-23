@@ -1,6 +1,6 @@
 # Laboratorio 3 de Criptografía y Seguridad en Redes
 
-Francisco Antonio Tapia Canales · CIT2113 · Sección 2 · Profesor René Guerrero.
+Francisco Antonio Tapia Canales · CIT2113 · Sección 4 · Profesor Brayan Espina.
 Correo: francisco.tapia1@mail.udp.cl.
 Práctica realizada el 22 de octubre de 2026 en una cuenta propia de ForoDVD.
 
