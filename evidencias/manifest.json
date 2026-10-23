@@ -1,0 +1,58 @@
+{
+  "fecha": "2026-10-22",
+  "sitio": "https://www.forodvd.com/",
+  "hash_correcto_de_prueba": "95e5ffce381c006ca63266ecc0ac6771",
+  "hash_incorrecto_observado": "3ede7d633d41fab8aaa3c336e4b15369",
+  "puntos_posibles": 60,
+  "repositorio": "https://github.com/rkkas/laboratorio3-forodvd",
+  "archivos": [
+    {
+      "archivo": "E01_registro_confirmacion.png",
+      "sha256": "c9f513e2056112331be9ed9d6312f77d0a20cf4ad9adaac64a06979087a8f1c0"
+    },
+    {
+      "archivo": "E01_registro_md5.png",
+      "sha256": "18b467c7257df8279c7632f67cffcb54b423d473d9ec0c6a2a7c1138e5fc2b04"
+    },
+    {
+      "archivo": "E02_login_md5.png",
+      "sha256": "cae443a3304775b2857e9e7768e8c77c67038450f37d35e51c6ef04b60c718fc"
+    },
+    {
+      "archivo": "E02_login_md5_utf.png",
+      "sha256": "96200bdc69be78bdfc75173d43eceb0840f5036cbc39e6f279cb7f13b03b743e"
+    },
+    {
+      "archivo": "E03_consola.png",
+      "sha256": "28a262203fa5c327115f69d0bb3d10619fcb4a011cb0d83d96cfa152302ac4e7"
+    },
+    {
+      "archivo": "E04_hash_incorrecto.png",
+      "sha256": "4d67cda390458c405a70245ac8fdc7ce3151faa89abe5fb51561156a44fece12"
+    },
+    {
+      "archivo": "E04_intercept.png",
+      "sha256": "2c1a862c958e124369f4109a80dd04ac7f30e66e80a94ff81b5dc84b2df57ba1"
+    },
+    {
+      "archivo": "E05_control_login_correcto.png",
+      "sha256": "d6685d30264d056f1dd7901bfa3c4c292c97f955192e89ecf6701b3a4dce8a7c"
+    },
+    {
+      "archivo": "E06_control_login_incorrecto.png",
+      "sha256": "5bf6863d33349a02630135794c24fa169823bc8b2f95989a933692fa80415c66"
+    },
+    {
+      "archivo": "E07_solicitud_modificada.png",
+      "sha256": "5bf2e956936d76b1e01a2bc3c17fd462dfaf58e93fc070e2c89aa95784f8fd05"
+    },
+    {
+      "archivo": "E08_resultado_hash.png",
+      "sha256": "c7f852c9f290023813b8b17822bcdf5f3072d35e0e43d3c9314645e14aa2a82e"
+    },
+    {
+      "archivo": "E09_cambio_contrasena.png",
+      "sha256": "5907247a995e338d09e77c92e6c334798fc5dcf36a6ed8937ea345c89c752968"
+    }
+  ]
+}

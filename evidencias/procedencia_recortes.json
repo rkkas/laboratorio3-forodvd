@@ -1,0 +1,54 @@
+[
+  {
+    "evidencia": "E03_consola.png",
+    "captura_original": "image(20261022-193316).png",
+    "sha256_original": "543899dbd235c65e41c820a9712b4c6345b91722566c65908e03d555ed9fa2f8",
+    "rectangulo_px": [
+      278,
+      926,
+      1110,
+      977
+    ],
+    "sha256_recorte": "28a262203fa5c327115f69d0bb3d10619fcb4a011cb0d83d96cfa152302ac4e7",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  },
+  {
+    "evidencia": "E04_intercept.png",
+    "captura_original": "image(20261022-195446).png",
+    "sha256_original": "9c44b19112a623d89815da681a358b8dd9a2871425ce44a07c317677924b05cc",
+    "rectangulo_px": [
+      295,
+      157,
+      1200,
+      331
+    ],
+    "sha256_recorte": "2c1a862c958e124369f4109a80dd04ac7f30e66e80a94ff81b5dc84b2df57ba1",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  },
+  {
+    "evidencia": "E04_hash_incorrecto.png",
+    "captura_original": "image(20261022-195446).png",
+    "sha256_original": "9c44b19112a623d89815da681a358b8dd9a2871425ce44a07c317677924b05cc",
+    "rectangulo_px": [
+      1560,
+      713,
+      1840,
+      855
+    ],
+    "sha256_recorte": "4d67cda390458c405a70245ac8fdc7ce3151faa89abe5fb51561156a44fece12",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  },
+  {
+    "evidencia": "E07_solicitud_modificada.png",
+    "captura_original": "image(20261022-195757).png",
+    "sha256_original": "19c9d665b6a2b2f07dd82a96ad88fe79b409fad8ab743620c71db30fcf5187a9",
+    "rectangulo_px": [
+      124,
+      689,
+      1205,
+      710
+    ],
+    "sha256_recorte": "5bf2e956936d76b1e01a2bc3c17fd462dfaf58e93fc070e2c89aa95784f8fd05",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  }
+]
