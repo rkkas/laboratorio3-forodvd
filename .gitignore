@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+.env
+*.har
+*.burp
+*.log
+*.aux
+*.out
+*.toc
+privado/
+originales_completos/
+material_original/
