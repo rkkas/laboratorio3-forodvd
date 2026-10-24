@@ -9,3 +9,5 @@ Consulta: 22 de octubre de 2026.
 - [S5 PortSwigger modificación de solicitudes con Inspector](https://portswigger.net/burp/documentation/desktop/tools/inspector/modify-requests)
 
 El análisis de la política y de los controles observados se desarrolla en el apartado 2.6 del informe.
+
+La política de HD Bits se volvió a consultar el 23 de octubre de 2026. El encabezado y el fragmento de confidencialidad quedaron documentados mediante capturas nativas del navegador.
