@@ -37,6 +37,7 @@ El control con contraseña incorrecta fue rechazado. Al sustituir sus dos hashes
 
 ![E04_intercept.png](evidencias/E04_intercept.png)
 ![E04_hash_incorrecto.png](evidencias/E04_hash_incorrecto.png)
+![Vista general de Burp](evidencias/E10_Burp_contexto.png)
 
 ### 2.5 Acceso mediante sustitución del hash
 
@@ -44,6 +45,15 @@ El control con contraseña incorrecta fue rechazado. Al sustituir sus dos hashes
 ![E06_control_login_incorrecto.png](evidencias/E06_control_login_incorrecto.png)
 ![E07_solicitud_modificada.png](evidencias/E07_solicitud_modificada.png)
 ![E08_resultado_hash.png](evidencias/E08_resultado_hash.png)
+
+### 2.6 Privacidad
+
+Política consultada el 23 de octubre de 2026: https://www.hdbits.es/politica-de-proteccion-de-datos/
+
+Los dos recortes muestran el encabezado y el fragmento de confidencialidad de la página publicada.
+
+![Encabezado de la política](evidencias/E11_politica_titulo.png)
+![Fragmento de confidencialidad](evidencias/E11_politica_fragmento.png)
 
 ### Cierre con cambio de contraseña
 
