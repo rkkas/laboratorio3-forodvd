@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[margin=2.54cm,top=1.78cm,bottom=1.78cm]{geometry}
-\usepackage{graphicx,longtable,array,hyperref,listings}
+\usepackage{graphicx,longtable,array,hyperref,listings,pdflscape}
 \pdfimageresolution=72
 \urlstyle{same}
 \hypersetup{hidelinks,pdftitle={Informe Laboratorio 3 - 2026},pdfauthor={Francisco Antonio Tapia Canales},pdfsubject={Criptografía y Seguridad en Redes CIT2113},pdflang={es-CL}}
@@ -91,6 +91,16 @@ Los campos se revisaron en Inspector y después en Raw. En la captura de la figu
 {\small Figura 5. Hash de la contraseña incorrecta observado en la solicitud detenida.}
 \end{minipage}\end{center}
 La captura se realizó desde el navegador configurado con Burp. Este resultado acredita la inspección de esa sesión, sin demostrar una interceptación de HTTPS desde un equipo ajeno al navegador de prueba.\par
+
+\begin{landscape}
+\subsection*{Contexto de la interceptación}
+La vista general reúne Intercept on, el destino \nolinkurl{https://www.forodvd.com:443}, la solicitud POST a \nolinkurl{/login.php?do=login}, los parámetros de la petición y el valor mostrado por Inspector. Corresponde al mismo intento con contraseña incorrecta de las figuras 4 y 5.\par
+\begin{center}\begin{minipage}{\linewidth}\centering
+\includegraphics[width=\linewidth]{evidencias/E10_Burp_contexto.png}
+\par\smallskip
+{\small Figura 6. Vista general de Burp con el sitio, la solicitud de login y el parámetro MD5.}
+\end{minipage}\end{center}
+\end{landscape}
 \newpage
 \subsection*{2.5. Inicio de sesión mediante el hash}
 \addcontentsline{toc}{subsection}{2.5. Inicio de sesión mediante el hash}
@@ -109,7 +119,7 @@ C Sustitución & Contraseña incorrecta en el formulario y ambos hashes reemplaz
 \begin{center}\begin{minipage}{\linewidth}\centering
 \includegraphics[width=6.5in,trim=168.0235bp 170.2738bp 187.5262bp 87.0121bp,clip]{evidencias/E06_control_login_incorrecto.png}
 \par\smallskip
-{\small Figura 6. Rechazo del acceso con contraseña incorrecta antes de sustituir el hash.}
+{\small Figura 7. Rechazo del acceso con contraseña incorrecta antes de sustituir el hash.}
 \end{minipage}\end{center}
 El sitio informó un intento utilizado de cinco e indicó un bloqueo de 15 minutos al agotar ese límite. La captura acredita el aviso; no se agotaron los intentos para comprobar el bloqueo.\par
 Se repitió el ingreso con una contraseña incorrecta y se activó Intercept antes de enviar. Ambos parámetros contenían el hash incorrecto indicado abajo. En Raw se sustituyeron únicamente esos dos valores por el hash correcto, conservando los demás datos de la solicitud vigente.\par
@@ -125,7 +135,7 @@ Hash correcto reutilizado:
 \\
 \includegraphics[width=6.5in,trim=435.0991bp 0.0000bp 231.0526bp 0.0000bp,clip]{evidencias/E07_solicitud_modificada.png}
 \par\smallskip
-{\small Figura 7. Dos recortes de la misma línea de la solicitud con los hashes sustituidos.}
+{\small Figura 8. Dos recortes de la misma línea de la solicitud con los hashes sustituidos.}
 \end{minipage}\end{center}
 Se sustituyeron \nolinkurl{vb_login_md5password} y \nolinkurl{vb_login_md5password_utf} por el MD5 correcto, sin cambiar el resto de la solicitud vigente. Después se pulsó Forward y se dejó Intercept off para que terminara la navegación.\par
 \newpage
@@ -134,13 +144,13 @@ Antes de la sustitución se había comprobado el acceso normal con la contraseñ
 \begin{center}\begin{minipage}{\linewidth}\centering
 \includegraphics[width=6.5in]{evidencias/E05_control_login_correcto.png}
 \par\smallskip
-{\small Figura 8. Control previo de acceso con la contraseña correcta.}
+{\small Figura 9. Control previo de acceso con la contraseña correcta.}
 \end{minipage}\end{center}
 Después de pulsar Forward y desactivar Intercept, ForoDVD mostró el usuario de prueba y la opción Finalizar sesión. La captura siguiente corresponde al resultado de esa solicitud modificada.\par
 \begin{center}\begin{minipage}{\linewidth}\centering
 \includegraphics[width=6.5in,trim=225.0314bp 88.5124bp 240.7836bp 66.0092bp,clip]{evidencias/E08_resultado_hash.png}
 \par\smallskip
-{\small Figura 9. Sesión iniciada después de enviar la solicitud con los hashes sustituidos.}
+{\small Figura 10. Sesión iniciada después de enviar la solicitud con los hashes sustituidos.}
 \end{minipage}\end{center}
 El resultado demuestra que, en la cuenta de prueba del estudiante, el hash capturado fue suficiente para autenticar el acceso al incorporarlo a una solicitud válida. La contraseña escrita inicialmente en el formulario era incorrecta. Se reutilizó el hash como credencial; no fue necesario recuperar la contraseña a partir de ese valor.\par
 La cuenta continuó pendiente de activación por correo para participar en el foro. Ese aviso limita la participación y no impidió que el sitio abriera una sesión autenticada.\par
@@ -150,10 +160,18 @@ La cuenta continuó pendiente de activación por correo para participar en el fo
 El enlace Privacidad del pie de ForoDVD dirige a la política de protección de datos de HD Bits. Ese documento se revisó como política publicada por el operador del sitio.\par
 \subsection*{Contenido de la política publicada}
 La política identifica a HD Bits Networks SL como responsable del tratamiento. Declara confidencialidad de los datos y reconoce derechos de acceso, rectificación, cancelación y oposición. Indica que una cesión de datos a terceros requeriría informar al usuario y solicitar su consentimiento. También describe comunicaciones comerciales voluntarias y la gestión de preferencias desde el perfil del foro.\par
-La política declara: «Sus datos serán tratados con absoluta confidencialidad».\par
+El fragmento de confidencialidad se comprobó en la página publicada el 23 de octubre de 2026. La figura 11 muestra el encabezado y ese fragmento mediante dos recortes de las capturas del navegador.\par
 El texto revisado no detalla el algoritmo usado para las contraseñas, sal, iteraciones, almacenamiento, longitud mínima ni autenticación de varios factores. Por ello, la política aporta compromisos generales sobre datos personales, pero no permite determinar cómo se protegen las contraseñas en el servidor.\par
 Enlace a la política:\\
 \url{https://www.hdbits.es/politica-de-proteccion-de-datos/}\par
+\begin{center}\begin{minipage}{\linewidth}\centering
+\includegraphics[width=5.8in]{evidencias/E11_politica_titulo.png}
+\par\smallskip
+\includegraphics[width=5.8in]{evidencias/E11_politica_fragmento.png}
+\par\smallskip
+{\small Figura 11. Encabezado y fragmento de confidencialidad de la política de HD Bits, consultada el 23 de octubre de 2026; se presentan dos recortes.}
+\end{minipage}\end{center}
+
 \subsection*{Controles observados en las pantallas}
 {\small\renewcommand{\arraystretch}{1.12}
 \begin{longtable}{|>{\raggedright\arraybackslash}p{4.31cm}|>{\raggedright\arraybackslash}p{11.26cm}|}
@@ -185,7 +203,7 @@ En Configuración se abrió Editar correo y contraseña, se completaron los camp
 \begin{center}\begin{minipage}{\linewidth}\centering
 \includegraphics[width=6.5in,trim=378.8029bp 285.0398bp 174.0243bp 41.2558bp,clip]{evidencias/E09_cambio_contrasena.png}
 \par\smallskip
-{\small Figura 10. Confirmación de actualización después de enviar el cambio de contraseña.}
+{\small Figura 12. Confirmación de actualización después de enviar el cambio de contraseña.}
 \end{minipage}\end{center}
 
 \par\medskip
