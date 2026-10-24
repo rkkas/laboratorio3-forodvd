@@ -50,5 +50,52 @@
     ],
     "sha256_recorte": "5bf2e956936d76b1e01a2bc3c17fd462dfaf58e93fc070e2c89aa95784f8fd05",
     "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  },
+  {
+    "evidencia": "E10_Burp_contexto.png",
+    "captura_original": "image(20261022-195446).png",
+    "sha256_original": "9c44b19112a623d89815da681a358b8dd9a2871425ce44a07c317677924b05cc",
+    "rectangulo_px": [
+      295,
+      125,
+      1893,
+      900
+    ],
+    "sha256_recorte": "aac94f6f1e64eacd6a00c33e2174055c09afc8a0811b555df5b25651ccfdcc70",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto"
+  },
+  {
+    "evidencia": "E11_politica_titulo.png",
+    "captura_original": "politica-titulo-1792806795134.jpg",
+    "sha256_original": "d52706a545f6012431dbd4f44fdfe619a2ce0717ac471f270b4dd6beb336eca2",
+    "rectangulo_px": [
+      186,
+      288,
+      902,
+      345
+    ],
+    "sha256_recorte": "ac8c46c16c1101fbdbbd8813a25b18691dbed7037ed894cf1c65ef679c721831",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto",
+    "url": "https://www.hdbits.es/politica-de-proteccion-de-datos/",
+    "fecha_captura": "2026-10-23",
+    "zona_horaria": "America/Santiago",
+    "origen": "Captura nativa del navegador de la página publicada"
+  },
+  {
+    "evidencia": "E11_politica_fragmento.png",
+    "captura_original": "politica-fragmento-1792806795134.jpg",
+    "sha256_original": "b37068936ac27c857091d00f662f53ead7788d29125cd285e4f081f9e00d705b",
+    "rectangulo_px": [
+      190,
+      390,
+      700,
+      420
+    ],
+    "sha256_recorte": "b58fb8d808f2d1b424668a6891efccbefe88d7030df0b9a9bd6abd2ce1521b35",
+    "procesamiento": "Recorte por visor de documento; no se reconstruye ni sustituye texto",
+    "url": "https://www.hdbits.es/politica-de-proteccion-de-datos/",
+    "fecha_captura": "2026-10-23",
+    "zona_horaria": "America/Santiago",
+    "origen": "Captura nativa del navegador de la página publicada"
   }
 ]

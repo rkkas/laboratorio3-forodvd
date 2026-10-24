@@ -53,6 +53,18 @@
     {
       "archivo": "E09_cambio_contrasena.png",
       "sha256": "5907247a995e338d09e77c92e6c334798fc5dcf36a6ed8937ea345c89c752968"
+    },
+    {
+      "archivo": "E10_Burp_contexto.png",
+      "sha256": "aac94f6f1e64eacd6a00c33e2174055c09afc8a0811b555df5b25651ccfdcc70"
+    },
+    {
+      "archivo": "E11_politica_titulo.png",
+      "sha256": "ac8c46c16c1101fbdbbd8813a25b18691dbed7037ed894cf1c65ef679c721831"
+    },
+    {
+      "archivo": "E11_politica_fragmento.png",
+      "sha256": "b58fb8d808f2d1b424668a6891efccbefe88d7030df0b9a9bd6abd2ce1521b35"
     }
   ]
 }
